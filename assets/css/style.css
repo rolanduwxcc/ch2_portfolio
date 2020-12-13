@@ -1,28 +1,45 @@
+:root {
+  --primary-color: #e4eef0;
+  --secondary-color: #302f2d;
+  --tertiary-color: #755d0d;
+  --background-color-primary: #302f2d;
+  --background-color-secondary: #e4eef0;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: var(--background-color-primary);
+  color: var(--primary-color);
+  font-family: Arial, Helvetica, sans-serif;
 }
-:root {
-  --primary-color: #5014dd;
-  --secondary-color: #2ae6d6;
-  --tertiary-color: #755d0d;
+section {
+  padding: 60px;
 }
 
 header{
-  padding: 20px 35px;
+
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;  
   justify-content: space-between;
   align-items: center;
+  /* background-image: url(../images/IMG_Rolls.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center; */
+  background-color: var(--background-color-primary);
 }
 header h1 {
-  font-weight: bold;
-  font-size: 36px;
-  color: var(--primary-color);
-  margin: 0;
+  font-size: 34px;
+  color: var(--secondary-color);
+  background-color: var(--background-color-secondary);
+  /* margin: 10px 0px 10px 25px; */
+  padding-left: 500;
+  text-align: right;
   align-self: flex-start;
+  padding-right: 15px;
+  width: 30%;
 }
 header nav {
   margin: 7px 0;
@@ -37,7 +54,7 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.55vw;
+  font-size: 1.25vw;
   text-decoration: none;
 }
 header nav ul li a:hover {
@@ -45,4 +62,52 @@ header nav ul li a:hover {
   color: var(--secondary-color);
   border-radius: 15px;
   text-shadow: none;
+}
+.hero {
+  background-image: url(../images/IMG_Rolls.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+}
+.hero h2 {
+  color: var(--secondary-color);
+  font-size: 20px;
+  text-align: right;
+  width: 40%;
+  background: none;
+}
+.my-bio {
+  display: flex;
+  justify-content: space-around;
+}
+.my-bio h2 {
+  flex: 1;
+  width: 30%;
+}
+.my-bio p {
+  flex: 4;
+}
+.my-work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.my-contact-info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.my-contact-info h2 {
+  flex: 1;
+}
+.my-contact-info div {
+  flex: 4;
+}
+.my-contact-info div ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  list-style: none;
 }
