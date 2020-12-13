@@ -150,7 +150,6 @@ header nav ul li a:hover {
 .first-app {
   grid-column: 1 / 3;
   grid-row: 1/3;
-  /* background-image: url(../images/hero-bg.jpg); */
 }
 .app-image {
   display: block;
@@ -172,19 +171,6 @@ header nav ul li a:hover {
   font-weight: bold;
   color: var(--secondary-color);
 }
-/* .app-image2 {
-  background-image: url(../images/accessibility-400.png);
-  display: block;
-  width: 100%;
-  height: 100%;
-} */
-/* .first-hw:hover {
-  background-image: radial-gradient(black,white);
-  display: block;
-}
-.first-hw:active {
-  color: yellow;
-} */
 
 img {
   width: 100%;
@@ -299,6 +285,10 @@ header nav ul li a, .contact-item, .my-contact-info div ul li a {
   width: 35%;
   height: 35%;
 }
+.app-image p span {
+  font-size: 20px;
+}
+
 }
 /**********************************FOR MOBILE PHONES AND SMALLER***/
 @media screen and (max-width: 575px) {
