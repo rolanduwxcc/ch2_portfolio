@@ -22,14 +22,15 @@ section {
   margin-bottom: 15px;
 }
 h2 {
-  font-size: 40px;
+  font-size: 32px;
   font-weight: lighter;
+}
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
 }
 /************************************************************** HEADER Styles **************/
 header{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;  
   justify-content: space-between;
   align-items: center;
   /* background-image: url(../images/IMG_Rolls.png);
@@ -39,16 +40,18 @@ header{
   background-color: var(--background-color-primary);
 }
 header h1 {
+  flex: 1;
   font-size: 40px;
   font-weight: lighter;
   /* color: var(--secondary-color);
   background-color: var(--background-color-secondary); */
   /* margin: 10px 0px 10px 25px; */
   padding-left: 500;
-  text-align: right;
+  text-align: left;
   align-self: flex-start;
   padding-right: 15px;
-  width: 30%;
+  margin-left: 15px;
+  
 }
 header nav {
   margin: 7px 0;
@@ -63,7 +66,7 @@ header nav ul {
 header nav ul li a {
   padding: 10px 15px;
   font-weight: lighter;
-  font-size: 1.25vw;
+  font-size: 1.5vw;
   text-decoration: none;
 }
 header nav ul li a:hover {
@@ -83,6 +86,7 @@ header nav ul li a:hover {
   flex-flow: row wrap;
   justify-content: flex-end;
   padding: 60px;
+  margin-top: 15px;
 }
 .hero p {
   color: var(--secondary-color);
@@ -97,12 +101,10 @@ header nav ul li a:hover {
 }
 /************************************************************** ABOUT ME/BIO Styles ***********/
 .my-bio {
-  display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
 }
 .my-bio h2 {
   flex: 1;
-  width: 30%;
 }
 .my-bio p {
   flex: 4;
@@ -110,8 +112,6 @@ header nav ul li a:hover {
 
 /************************************************************** WORK Styles **************/
 .my-work {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
 }
 .my-work h2 {
@@ -136,8 +136,6 @@ header nav ul li a:hover {
 
 /************************************************************** CONTACT INFO Styles **************/
 .my-contact-info {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
 }
@@ -148,25 +146,36 @@ header nav ul li a:hover {
   flex: 4;
 }
 .my-contact-info div ul {
-  display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
   list-style: none;
+}
+
+
+.my-contact-info div ul li a {
+  padding: 10px 15px;
+  font-weight: lighter;
+  font-size: 1.5vw;
+  text-decoration: none;
+}
+.my-contact-info div ul li a:hover {
+  background: var(--primary-color);
+  color: var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
 }
 /************************************************************** FOOTER Styles **************/
 footer {
   background-color: var(--primary-color);
   width: 100%;
   padding: 40px 35px;
-  display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   align-items: center;
 }
 footer h2 {
   color: var(--secondary-color);
   background: none;
-  font-size: 30px;
+  font-size: 24px;
   margin: 0;
 }
 footer p {
@@ -176,3 +185,78 @@ footer p {
   background: none;
 }
 /************************************************************** MEDIA QUERIES **************/
+/********************************FOR SMALLER DESKTOP SCREENS AND SMALLER****/
+@media screen and (max-width: 980px) {
+  header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+  }
+  header h1 {
+      width:100%;
+      text-align: center;
+  }
+  header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+  }
+
+  footer h2, footer div {
+      text-align: center;
+      width: 100%;
+  }
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+}
+/*********************************FOR TABLETS AND SMALLER****/
+@media screen and (max-width: 768px) {
+header nav ul li a, .contact-item, .my-contact-info div ul li a {
+    font-size: 20px;
+}
+ .flex-container {
+   flex-flow: column wrap;
+   justify-content: center;
+   text-align: center;
+   align-content: center;
+ }
+
+.my-contact-info div ul {
+  flex-flow: column-reverse wrap;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 10px;
+  justify-items: center;
+  align-items: center;
+}
+.contact-item {
+  margin-bottom: 10px;
+}
+
+}
+/**********************************FOR MOBILE PHONES AND SMALLER***/
+@media screen and (max-width: 575px) {
+  .hero-form button {
+      width: 100%;
+  }
+  .section-title {
+      width: 95%;
+  }
+  .intro p {
+      width: 100%;
+  }
+  .trainer {
+      flex: 0 100%;
+  }
+  .contact-info {
+      text-align: center;
+  }
+  .contact-info > * {
+      flex: 0 100%;
+  }
+  .contact-form {
+      order: 3;
+  }
+}
