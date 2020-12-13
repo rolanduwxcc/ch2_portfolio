@@ -8,7 +8,7 @@ A landing page to introduce employers to me and show off some of my work.
 * CSS
 
 ## Links
-* Deployed Website - https://rolanduwxcc.github.io/run-buddy/
+* Deployed Website - https://rolanduwxcc.github.io/ch2_portfolio/
 * GitHub Repo - https://github.com/rolanduwxcc/ch2_portfolio
 
 ## Contributions
