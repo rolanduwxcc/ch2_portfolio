@@ -13,12 +13,20 @@
   color: var(--primary-color);
   font-family: Arial, Helvetica, sans-serif;
 }
-section {
-  padding: 60px;
+body {
+  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
-
+section {
+  padding: 15px;
+  margin-bottom: 15px;
+}
+h2 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+/************************************************************** HEADER Styles **************/
 header{
-
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;  
@@ -31,9 +39,10 @@ header{
   background-color: var(--background-color-primary);
 }
 header h1 {
-  font-size: 34px;
-  color: var(--secondary-color);
-  background-color: var(--background-color-secondary);
+  font-size: 40px;
+  font-weight: lighter;
+  /* color: var(--secondary-color);
+  background-color: var(--background-color-secondary); */
   /* margin: 10px 0px 10px 25px; */
   padding-left: 500;
   text-align: right;
@@ -63,21 +72,30 @@ header nav ul li a:hover {
   border-radius: 15px;
   text-shadow: none;
 }
+
+/************************************************************** HERO Styles **************/
 .hero {
-  background-image: url(../images/IMG_Rolls.png);
+  background-color: var(--background-color-secondary);
+  /* background-image: url(../images/IMG_Rolls.png); */
   background-size: cover;
   background-position: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-end;
+  padding: 60px;
 }
-.hero h2 {
+.hero p {
   color: var(--secondary-color);
   font-size: 20px;
   text-align: right;
   width: 40%;
   background: none;
 }
+/************************************************************** ARTICLE Styles **************/
+.articles article {
+  margin-bottom: 20px;
+}
+/************************************************************** ABOUT ME/BIO Styles ***********/
 .my-bio {
   display: flex;
   justify-content: space-around;
@@ -89,15 +107,39 @@ header nav ul li a:hover {
 .my-bio p {
   flex: 4;
 }
+
+/************************************************************** WORK Styles **************/
 .my-work {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
 }
+.my-work h2 {
+  flex: 1;
+}
+.grid-container {
+  flex: 4;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: repeat(3,1fr);
+
+}
+.grid-item {
+  margin: 10px;
+  border-width: 10px;
+
+}
+.first-app {
+  grid-column: 1 / 3;
+  grid-row: 1/3;
+}
+
+/************************************************************** CONTACT INFO Styles **************/
 .my-contact-info {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
 }
 .my-contact-info h2 {
   flex: 1;
@@ -111,3 +153,26 @@ header nav ul li a:hover {
   justify-content: space-between;
   list-style: none;
 }
+/************************************************************** FOOTER Styles **************/
+footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 40px 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+footer h2 {
+  color: var(--secondary-color);
+  background: none;
+  font-size: 30px;
+  margin: 0;
+}
+footer p {
+  line-height: 1.5;
+  text-align: right;
+  color: var(--secondary-color);
+  background: none;
+}
+/************************************************************** MEDIA QUERIES **************/
