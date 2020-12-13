@@ -11,13 +11,13 @@ A landing page to introduce employers to me and show off some of my work.
 * Deployed Website - https://rolanduwxcc.github.io/run-buddy/
 * GitHub Repo - https://github.com/rolanduwxcc/ch2_portfolio
 
-##Contributions
+## Contributions
 * Made with Made with a Little Bit of Something by Warren Rowland
 
-##Contact Info
+## Contact Info
 * Warren Rowland - Find me on [Linked In](https://www.linkedin.com/in/linkedinrowland/) or [GitHub](https://github.com/rolanduwxcc)
 
-##Screenshots
+## Screenshots
 ![Warren's Portfolio Page](/assets/images/portfolio-page.png)
 
 ### ©️2020 Rolanduwxcc, Inc 
