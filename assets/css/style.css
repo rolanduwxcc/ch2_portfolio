@@ -38,6 +38,8 @@ header{
   background-attachment: fixed;
   background-position: center; */
   background-color: var(--background-color-primary);
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 header h1 {
   flex: 1;
@@ -79,21 +81,26 @@ header nav ul li a:hover {
 /************************************************************** HERO Styles **************/
 .hero {
   background-color: var(--background-color-secondary);
-  /* background-image: url(../images/IMG_Rolls.png); */
   background-size: cover;
   background-position: center;
   display: flex;
   flex-flow: row wrap;
-  justify-content: flex-end;
-  padding: 60px;
+  justify-content: space-between;
+  padding: 30px;
   margin-top: 15px;
+}
+.hero img {
+  display: block;
+  width: 25%;
+  height: 25%;
 }
 .hero p {
   color: var(--secondary-color);
-  font-size: 20px;
+  font-size: 25px;
   text-align: right;
   width: 40%;
   background: none;
+  margin-top: auto;
 }
 /************************************************************** ARTICLE Styles **************/
 .articles article {
@@ -288,7 +295,10 @@ header nav ul li a, .contact-item, .my-contact-info div ul li a {
 .my-contact-info div ul li {
   margin: 10px;
 }
-
+.hero img {
+  width: 35%;
+  height: 35%;
+}
 }
 /**********************************FOR MOBILE PHONES AND SMALLER***/
 @media screen and (max-width: 575px) {
