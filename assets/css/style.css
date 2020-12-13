@@ -151,6 +151,9 @@ header nav ul li a:hover {
   list-style: none;
 }
 
+.contact-item {
+  text-align: right;
+}
 
 .my-contact-info div ul li a {
   padding: 10px 15px;
@@ -224,39 +227,26 @@ header nav ul li a, .contact-item, .my-contact-info div ul li a {
  }
 
 .my-contact-info div ul {
-  flex-flow: column-reverse wrap;
+  flex-flow: column wrap;
   justify-content: space-between;
   padding: 10px;
   margin: 10px;
   justify-items: center;
   align-items: center;
 }
-.contact-item {
-  margin-bottom: 10px;
+.my-contact-info div ul li {
+  margin: 10px;
 }
 
 }
 /**********************************FOR MOBILE PHONES AND SMALLER***/
 @media screen and (max-width: 575px) {
-  .hero-form button {
-      width: 100%;
+  .list-item-one {
+    order: 4;
+    font-size: 30px;
   }
-  .section-title {
-      width: 95%;
-  }
-  .intro p {
-      width: 100%;
-  }
-  .trainer {
-      flex: 0 100%;
-  }
-  .contact-info {
-      text-align: center;
-  }
-  .contact-info > * {
-      flex: 0 100%;
-  }
-  .contact-form {
-      order: 3;
+  .list-item-two {
+    order: 5;
+    font-size: 30px;
   }
 }
